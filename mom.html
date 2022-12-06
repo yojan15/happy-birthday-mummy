@@ -1,0 +1,43 @@
+<html>
+<title>Dear Mom</title>
+<link
+      href='https://fonts.googleapis.com/css?family=Sofia|Bilbo' rel='stylesheet'>
+<style>
+    h1 {color:goldenrod}
+    p {color:antiquewhite}
+    img{max-width:30%;
+    height:auto;}
+</style>
+<h1 style="font-family:sofia;text-align:center;font-size:400%">Dear Mom,</h1>
+<p style="font-family:Bilbo;text-align:center;font-size:200%">There's nothing more reassuring than having a mother like you.</p>
+<body bgcolor="483d8b" onload = "startTimer()">
+<script>
+    function changeImage()
+    {
+    var img = document.getElementById("pic");
+    img.src = images[x];
+    x++;
+
+    if(x >= images.length)
+    {
+        x = 0;
+    }
+    //startTimer();
+    }
+    function startTimer()
+    {
+        setInterval(changeImage, 3000);
+    }
+    var images = [], x = 0;
+    images[0] = "poki.jpeg";
+    images[1] = "pokii.jpeg";
+    images[2] = "sanjana.jpeg";
+    images[3] = "sanjanamom.jpeg";
+
+</script>
+<center><img id="pic" src="Kids1999 (47).jpg" align="middle;"></center>
+<p style="font-family:Bilbo;text-align:center;font-size:200%">I love you. Happy Birthday mummy</p>
+<p style="font-family:Bilbo;text-align:center;font-size:300%">Love,<br>
+    Sanjana</p>
+</body>
+</html>
